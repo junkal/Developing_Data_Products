@@ -7,12 +7,12 @@ shinyUI(pageWithSidebar(
   
   sidebarPanel(
     #Symbol
-    textInput("symbol1", "Stock Symbol:", "AAPL"),
-    textInput("symbol2", "Stock Symbol:", "GOOG"),
+    textInput("symbol1", "Enter the symbol of stock 1:", "AAPL"),
+    textInput("symbol2", "Enter the symbol of stock 2:", "GOOG"),
     dateInput("dateFrom", "From:","2014-12-01" ),
     dateInput("dateTo", "To:" ),
     selectInput("marketindex",
-                label="Select an index to compare with",
+                label="Select a market index to compare with",
                 choices=list("STI"=1,
                              "DJI"=2,
                              "NASDAQ"=3,

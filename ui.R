@@ -9,7 +9,7 @@ shinyUI(pageWithSidebar(
     #Symbol
     textInput("symbol1", "Stock symbol 1:", "AAPL"),
     textInput("symbol2", "Stock symbol 2:", "GOOG"),
-    dateInput("dateFrom", "From:","2014-12-01" ),
+    dateInput("dateFrom", "From:", value="2014-12-01" ),
     dateInput("dateTo", "To:" ),
     selectInput("marketindex",
                 label="Select a market index to compare with",

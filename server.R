@@ -14,6 +14,7 @@ shinyServer(function(input, output){
                            auto.assign=FALSE)
       
       chartSeries(plotData,
+                  type = 'candlesticks',
                   name=input$symbol1,
                   layout=NULL,
                   TA=NULL,
@@ -25,6 +26,7 @@ shinyServer(function(input, output){
                             auto.assign=FALSE)
       
       chartSeries(plotData2,
+                  type = 'candlesticks',
                   name=input$symbol2,
                   layout=NULL,
                   TA=NULL,
@@ -107,6 +109,7 @@ shinyServer(function(input, output){
   
   output$symbolMainIndex <- renderPlot({    
     chartSeries(datasetInput(),
+                type = 'candlesticks',
                 name=index_string,
                 layout=NULL,
                 TA=NULL,
